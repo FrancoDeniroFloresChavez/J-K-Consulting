@@ -8,7 +8,7 @@ import Header from "../components/Header.astro";
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/logojk.png" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>J%K Consulting</title>
 	</head>
@@ -18,11 +18,10 @@ import Header from "../components/Header.astro";
 	</body>
 </html>
 
-<style is:global>
+<style>
 	@import "tailwindcss";
-	@import "tailwindcss-motion";
 	@plugin "@midudev/tailwind-animations";
-
+	html,
 	body {
 		margin: 0;
 		width: 100%;
