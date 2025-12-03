@@ -19,10 +19,9 @@ import Header from "../components/Header.astro";
 </html>
 
 <style is:global>
-	@import "tailwindcss";
-	@plugin "@midudev/tailwind-animations";
-	@import "tailwindcss-motion";
-	html,
+@import "tailwindcss";
+@import "tailwindcss-motion";  // ✅ Todos los @import primero
+@plugin "@midudev/tailwind-animations";
 	body {
 		margin: 0;
 		width: 100%;
