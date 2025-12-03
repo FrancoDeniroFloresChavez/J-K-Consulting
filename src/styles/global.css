@@ -1,1 +1,14 @@
+/* ✅ PRIMERO: Todos los @import */
 @import "tailwindcss";
+@import "tailwindcss-motion";
+
+/* ✅ DESPUÉS: Plugins y otras reglas */
+@plugin "@midudev/tailwind-animations";
+
+/* ✅ FINALMENTE: Tu CSS personalizado */
+html,
+body {
+    /* tus estilos aquí */
+}
+
+/* resto de tu CSS... */
