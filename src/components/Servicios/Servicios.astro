@@ -23,156 +23,187 @@ import OTROS from "../../assets/services/OTROS.png";
     <section
         class="mt-6 sm:mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8"
     >
-        <div
-            class="service-card flex flex-col items-center gap-3 sm:gap-4 justify-center h-80 sm:h-[22rem] md:h-96
-    bg-white rounded-2xl transition-all duration-300 p-4
-    hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF] animate-fade-in animate-delay-100"
-        >
-            <img
-                class="w-52 sm:w-60 md:w-72"
-                src={Asesoria.src}
-                alt="Asesoria contable laboral y tributario"
-            />
-            <p class="font-bold text-center text-sm sm:text-base">
-                Asesoria contable laboral y tributario
-            </p>
-            <span
-                class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
-                >Apoyo experto para gestionar tus obligaciones contables,
-                laborales y tributarias con eficiencia y confianza.</span
+        <a href="/ServiciosModal/Asesoria" class="block">
+            <div
+                class="service-card scroll-reveal flex flex-col items-center gap-3 sm:gap-4 justify-center
+        h-80 sm:h-[22rem] md:h-96 bg-white rounded-2xl p-4
+        hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF] animate-fade-in-down cursor-pointer"
             >
-        </div>
-
-        <div
-            class="service-card flex flex-col items-center gap-3 sm:gap-4 justify-center h-80 sm:h-[22rem] md:h-96
-    bg-white rounded-2xl transition-all duration-300 p-4
-    hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF] animate-fade-in animate-delay-100"
-        >
-            <img
-                class="w-52 sm:w-60 md:w-72"
-                src={Formalizacion.src}
-                alt="Constitucion y formalizacion de empresas"
-            />
-            <p class="font-bold text-center text-sm sm:text-base">
-                Constitucion y formalizacion de empresas
-            </p>
-            <span
-                class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
-                >Te guiamos en cada paso para crear y formalizar tu empresa de
-                manera rápida, segura y conforme a la normativa vigente.</span
+                <img
+                    class="w-52 sm:w-60 md:w-72"
+                    src={Asesoria.src}
+                    alt="Asesoria contable laboral y tributario"
+                    style="view-transition-name: asesoria;"
+                />
+                <p class="font-bold text-center text-sm sm:text-base">
+                    Asesoria contable laboral y tributario
+                </p>
+                <span
+                    class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
+                >
+                    Apoyo experto para gestionar tus obligaciones contables,
+                    laborales y tributarias con eficiencia y confianza.
+                </span>
+            </div>
+        </a>
+        <a href="/ServiciosModal/Constitucion" class="block">
+            <div
+                class="service-card scroll-reveal flex flex-col items-center gap-3 sm:gap-4 justify-center
+         h-80 sm:h-[22rem] md:h-96 bg-white rounded-2xl p-4
+         hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF] animate-fade-in-down"
             >
-        </div>
-        <div
-            class="service-card flex flex-col items-center gap-3 sm:gap-4 justify-center h-80 sm:h-[22rem] md:h-96
-    bg-white rounded-2xl transition-all duration-300 p-4
-    hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF] animate-fade-in animate-delay-100"
-        >
-            <img
-                class="w-52 sm:w-60 md:w-72"
-                src={Liquidacion.src}
-                alt="Liquidacion de impuestos mensuales y anuales"
-            />
-            <p class="font-bold text-center text-sm sm:text-base">
-                Liquidacion de impuestos mensuales y anuales
-            </p>
-            <span
-                class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
-                >Gestionamos tus obligaciones tributarias mensuales y anuales
-                para asegurar precisión, cumplimiento y tranquilidad en cada
-                declaración.</span
+                <img
+                    class="w-52 sm:w-60 md:w-72"
+                    src={Formalizacion.src}
+                    alt="Constitucion y formalizacion de empresas"
+                    style="view-transition-name: formalizacion;"
+                />
+                <p class="font-bold text-center text-sm sm:text-base">
+                    Constitucion y formalizacion de empresas
+                </p>
+                <span
+                    class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
+                    >Te guiamos en cada paso para crear y formalizar tu empresa
+                    de manera rápida, segura y conforme a la normativa vigente.</span
+                >
+            </div>
+        </a>
+        <a href="/ServiciosModal/Liquidacion" class="block">
+            <div
+                class="service-card scroll-reveal flex flex-col items-center gap-3 sm:gap-4 justify-center
+         h-80 sm:h-[22rem] md:h-96 bg-white rounded-2xl p-4
+         hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF] animate-fade-in-down"
             >
-        </div>
-        <div
-            class="service-card flex flex-col items-center gap-3 sm:gap-4 justify-center h-80 sm:h-[22rem] md:h-96
-    bg-white rounded-2xl transition-all duration-300 p-4
-    hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF] animate-fade-in animate-delay-400"
-        >
-            <img
-                class="w-52 sm:w-60 md:w-72"
-                src={Libros.src}
-                alt="Libros Electronicos (PLE-SIRE)"
-            />
-            <p class="font-bold text-center text-sm sm:text-base">
-                Libros Electronicos (PLE-SIRE)
-            </p>
-            <span
-                class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
-                >Administramos y cumplimos tus registros electrónicos en PLE y
-                SIRE con exactitud y dentro de los plazos establecidos.</span
+                <img
+                    class="w-52 sm:w-60 md:w-72"
+                    src={Liquidacion.src}
+                    alt="Liquidacion de impuestos mensuales y anuales"
+                    style="view-transition-name: liquidacion;"
+                />
+                <p class="font-bold text-center text-sm sm:text-base">
+                    Liquidacion de impuestos mensuales y anuales
+                </p>
+                <span
+                    class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
+                    >Gestionamos tus obligaciones tributarias mensuales y
+                    anuales para asegurar precisión, cumplimiento y tranquilidad
+                    en cada declaración.</span
+                >
+            </div>
+        </a>
+        <a href="/ServiciosModal/Libros" class="block">
+            <div
+                class="service-card scroll-reveal flex flex-col items-center gap-3 sm:gap-4 justify-center
+         h-80 sm:h-[22rem] md:h-96 bg-white rounded-2xl p-4
+         hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF]"
             >
-        </div>
-        <div
-            class="service-card flex flex-col items-center gap-3 sm:gap-4 justify-center h-80 sm:h-[22rem] md:h-96
-    bg-white rounded-2xl transition-all duration-300 p-4
-    hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF] animate-fade-in animate-delay-400"
-        >
-            <img class="w-52 sm:w-60 md:w-72" src={PDT.src} alt="PDT-PLAME" />
-            <p class="font-bold text-center text-sm sm:text-base">PDT-PLAME</p>
-            <span
-                class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
-                >Realizamos la declaración y gestión de tu PLAME y PDT con
-                precisión, garantizando el cumplimiento laboral y tributario de
-                tu empresa.</span
+                <img
+                    class="w-52 sm:w-60 md:w-72"
+                    src={Libros.src}
+                    alt="Libros Electronicos (PLE-SIRE)"
+                    style="view-transition-name: libros;"
+                />
+                <p class="font-bold text-center text-sm sm:text-base">
+                    Libros Electronicos (PLE-SIRE)
+                </p>
+                <span
+                    class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
+                    >Administramos y cumplimos tus registros electrónicos en PLE
+                    y SIRE con exactitud y dentro de los plazos establecidos.</span
+                >
+            </div>
+        </a>
+        <a href="/ServiciosModal/PDT" class="block">
+            <div
+                class="service-card scroll-reveal flex flex-col items-center gap-3 sm:gap-4 justify-center
+         h-80 sm:h-[22rem] md:h-96 bg-white rounded-2xl p-4
+         hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF]"
             >
-        </div>
-        <div
-            class="service-card flex flex-col items-center gap-3 sm:gap-4 justify-center h-80 sm:h-[22rem] md:h-96
-    bg-white rounded-2xl transition-all duration-300 p-4
-    hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF] animate-fade-in animate-delay-400"
-        >
-            <img
-                class="w-52 sm:w-60 md:w-72"
-                src={Analisis.src}
-                alt="Analisis y elaboracion de Estados Financieros"
-            />
-            <p class="font-bold text-center text-sm sm:text-base">
-                Analisis y elaboracion de Estados Financieros
-            </p>
-            <span
-                class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
-                >Preparamos y analizamos tus estados financieros para brindarte
-                información clara, confiable y útil para la toma de decisiones.</span
+                <img
+                    class="w-52 sm:w-60 md:w-72"
+                    src={PDT.src}
+                    alt="PDT-PLAME"
+                    style="view-transition-name: PLAME;"
+                />
+                <p class="font-bold text-center text-sm sm:text-base">
+                    PDT-PLAME
+                </p>
+                <span
+                    class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
+                    >Realizamos la declaración y gestión de tu PLAME y PDT con
+                    precisión, garantizando el cumplimiento laboral y tributario
+                    de tu empresa.</span
+                >
+            </div>
+        </a>
+        <a href="/ServiciosModal/analisis" class="block">
+            <div
+                class="service-card scroll-reveal flex flex-col items-center gap-3 sm:gap-4 justify-center
+         h-80 sm:h-[22rem] md:h-96 bg-white rounded-2xl p-4
+         hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF]"
             >
-        </div>
-        <div
-            class="service-card flex flex-col items-center gap-3 sm:gap-4 justify-center h-80 sm:h-[22rem] md:h-96
-    bg-white rounded-2xl transition-all duration-300 p-4
-    hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF] animate-fade-in animate-delay-700"
-        >
-            <img
-                class="w-52 sm:w-60 md:w-72"
-                src={Auditoria.src}
-                alt="Servicios de Auditoria"
-            />
-            <p class="font-bold text-center text-sm sm:text-base">
-                Servicios de Auditoria
-            </p>
-            <span
-                class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
-                >Evaluamos y verificamos tus procesos y registros contables para
-                garantizar transparencia, control y confianza en la gestión de
-                tu empresa.</span
+                <img
+                    class="w-52 sm:w-60 md:w-72"
+                    src={Analisis.src}
+                    alt="Analisis y elaboracion de Estados Financieros"
+                    style="view-transition-name: analisis;"
+                />
+                <p class="font-bold text-center text-sm sm:text-base">
+                    Analisis y elaboracion de Estados Financieros
+                </p>
+                <span
+                    class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
+                    >Preparamos y analizamos tus estados financieros para
+                    brindarte información clara, confiable y útil para la toma
+                    de decisiones.</span
+                >
+            </div>
+        </a>
+        <a href="/ServiciosModal/auditoria" class="block">
+            <div
+                class="service-card scroll-reveal flex flex-col items-center gap-3 sm:gap-4 justify-center
+         h-80 sm:h-[22rem] md:h-96 bg-white rounded-2xl p-4
+         hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF]"
             >
-        </div>
-        <div
-            class="service-card flex flex-col items-center gap-3 sm:gap-4 justify-center h-80 sm:h-[22rem] md:h-96
-    bg-white rounded-2xl transition-all duration-300 p-4
-    hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF] animate-fade-in animate-delay-700"
-        >
-            <img
-                class="w-52 sm:w-60 md:w-72"
-                src={OTROS.src}
-                alt="Entre otros tramites"
-            />
-            <p class="font-bold text-center text-sm sm:text-base">
-                Entre otros tramites
-            </p>
-            <span
-                class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
-                >Te asistimos en una amplia variedad de trámites adicionales
-                para facilitar la gestión administrativa y contable de tu
-                empresa</span
+                <img
+                    class="w-52 sm:w-60 md:w-72"
+                    src={Auditoria.src}
+                    alt="Servicios de Auditoria"
+                    style="view-transition-name: auditoria;"
+                />
+                <p class="font-bold text-center text-sm sm:text-base">
+                    Servicios de Auditoria
+                </p>
+                <span
+                    class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
+                    >Evaluamos y verificamos tus procesos y registros contables
+                    para garantizar transparencia, control y confianza en la
+                    gestión de tu empresa.</span
+                >
+            </div>
+        </a>
+        <a href="/ServiciosModal/otros" class="block">
+            <div
+                class="service-card scroll-reveal flex flex-col items-center gap-3 sm:gap-4 justify-center
+         h-80 sm:h-[22rem] md:h-96 bg-white rounded-2xl p-4
+         hover:scale-[1.03] hover:shadow-xl hover:bg-[#F7FAFF]"
             >
-        </div>
+                <img
+                    class="w-52 sm:w-60 md:w-72"
+                    src={OTROS.src}
+                    alt="Entre otros tramites"
+                    style="view-transition-name: otros;"
+                />
+                <p class="font-bold text-center text-sm sm:text-base">
+                    Entre otros tramites
+                </p>
+                <span
+                    class="text-[#0B5CA8] block max-w-[350px] text-center text-xs sm:text-sm"
+                    >Te asistimos en una amplia variedad de trámites adicionales
+                    para facilitar la gestión administrativa y contable de tu
+                    empresa</span
+                >
+            </div>
+        </a>
     </section>
 </div>

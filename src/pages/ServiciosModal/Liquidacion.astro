@@ -1,0 +1,60 @@
+---
+import liquidacion from "../../assets/services/Liquidacion.png";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout>
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+        <a
+            href="/servicios"
+            class="inline-flex items-center gap-2 text-sm font-medium text-[#0B5CA8]
+               hover:text-[#094b8a] transition mb-6"
+        >
+            ← Volver a servicios
+        </a>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <!-- Imagen -->
+            <div class="w-full h-[280px] sm:h-[360px] md:h-[420px]">
+                <img
+                    class="w-full h-full object-contain"
+                    src={liquidacion.src}
+                    alt="Liquidación de impuestos mensuales y anuales"
+                    style="view-transition-name: liquidacion;"
+                />
+            </div>
+
+            <!-- Contenido -->
+            <div class="flex flex-col gap-4">
+                <h1 class="text-2xl sm:text-3xl font-bold text-[#0D3D5C]">
+                    Liquidación de impuestos mensuales y anuales
+                </h1>
+
+                <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                    Realizamos el cálculo, declaración y presentación de tus
+                    impuestos mensuales y anuales, garantizando el cumplimiento
+                    oportuno de las obligaciones tributarias y evitando multas,
+                    sanciones o observaciones por parte de la administración
+                    tributaria.
+                </p>
+
+                <ul
+                    class="list-disc list-inside text-sm sm:text-base text-gray-600 space-y-1"
+                >
+                    <li>Determinación correcta de impuestos mensuales</li>
+                    <li>Declaración anual del Impuesto a la Renta</li>
+                    <li>Presentación oportuna ante SUNAT</li>
+                    <li>Prevención de contingencias y sanciones tributarias</li>
+                </ul>
+
+                <a
+                    href="/contacto"
+                    class="mt-4 inline-block w-fit rounded-xl bg-[#0B5CA8] px-6 py-3
+                     text-white text-sm font-semibold
+                     transition hover:bg-[#094b8a]"
+                >
+                    Solicitar asesoría
+                </a>
+            </div>
+        </div>
+    </section>
+</Layout>

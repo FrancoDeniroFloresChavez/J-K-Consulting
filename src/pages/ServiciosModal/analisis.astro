@@ -1,0 +1,63 @@
+---
+import analisis from "../../assets/services/Analizis.png";
+import { Image } from "astro:assets";
+
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout>
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+        <a
+            href="/servicios"
+            class="inline-flex items-center gap-2 text-sm font-medium text-[#0B5CA8]
+           hover:text-[#094b8a] transition mb-6"
+        >
+            ← Volver a servicios
+        </a>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <!-- Imagen -->
+            <div class="w-full h-[280px] sm:h-[360px] md:h-[420px]">
+                <img
+                    class="w-full h-full object-contain"
+                    src={analisis.src}
+                    alt="Asesoria contable laboral y tributario"
+                    style="view-transition-name: analisis;"
+                />
+            </div>
+
+            <!-- Contenido -->
+            <div class="flex flex-col gap-4">
+                <h1 class="text-2xl sm:text-3xl font-bold text-[#0D3D5C]">
+                    Análisis y elaboración de estados financieros
+                </h1>
+
+                <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                    Elaboramos y analizamos los estados financieros de tu
+                    empresa con información clara, confiable y oportuna,
+                    permitiéndote evaluar la situación económica, financiera y
+                    patrimonial para una adecuada toma de decisiones.
+                </p>
+
+                <ul
+                    class="list-disc list-inside text-sm sm:text-base text-gray-600 space-y-1"
+                >
+                    <li>
+                        Elaboración de balance general y estado de resultados
+                    </li>
+                    <li>Análisis financiero y evaluación de indicadores</li>
+                    <li>Control y revisión de ingresos, costos y gastos</li>
+                    <li>Soporte para la toma de decisiones empresariales</li>
+                </ul>
+
+                <a
+                    href="/contacto"
+                    class="mt-4 inline-block w-fit rounded-xl bg-[#0B5CA8] px-6 py-3
+                 text-white text-sm font-semibold
+                 transition hover:bg-[#094b8a]"
+                >
+                    Solicitar asesoría
+                </a>
+            </div>
+        </div>
+    </section>
+</Layout>
