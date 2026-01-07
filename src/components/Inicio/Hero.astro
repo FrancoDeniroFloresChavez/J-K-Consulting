@@ -1,7 +1,7 @@
 ---
 import Contador from "../../assets/Contador.png";
 import Nosotros from "../../assets/nosotrosLogo.jpg";
-import Elegirnos from "../../assets/ElegirnosLogo.jpg";
+import { Image } from "astro:assets";
 ---
 
 <main class="">
@@ -71,10 +71,13 @@ import Elegirnos from "../../assets/ElegirnosLogo.jpg";
                     class="flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-14 items-center"
                 >
                     <div class="w-full md:w-5xl">
-                        <img
-                            class="w-full h-full rounded-2xl animate-fade-in-down"
-                            src={Nosotros.src}
-                            alt=""
+                        <Image
+                            src={Nosotros}
+                            alt="Nosotros"
+                            width={1200}
+                            height={800}
+                            class="w-full rounded-2xl animate-fade-in-down"
+                            loading="lazy"
                         />
                     </div>
                     <span
@@ -92,64 +95,75 @@ import Elegirnos from "../../assets/ElegirnosLogo.jpg";
                     >
                 </div>
             </div>
+            <div class="mt-16">
+                <h3 class="text-center font-bold text-3xl mb-2">
+                    Qué nos diferencia
+                </h3>
 
-            <div
-                class="w-full mt-12 sm:mt-16 md:mt-20 flex flex-col items-center justify-center animate-fade-in animate-delay-700"
-            >
+                <span class="text-center block text-gray-600 mb-12">
+                    Apoyamos a los emprendedores a crecer junto con su negocio
+                </span>
+
                 <div
-                    class="p-4 sm:p-6 md:p-8 bg-gradient-to-r from-[#0A2942] via-[#0D3D5C] to-[#1F5F8B] w-full"
+                    class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto"
                 >
-                    <h2
-                        class="text-white font-medium text-xl sm:text-2xl md:text-[30.5px] w-full max-w-[451px] tracking-wider mb-4 sm:mb-5 mt-3 sm:mt-4 md:mt-5 text-center mx-auto"
-                    >
-                        Por que elegirnos
-                    </h2>
+                    <!-- VISIÓN -->
                     <div
-                        class="flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-14 items-center"
+                        class="flex items-start gap-6 p-6 rounded-xl hover:shadow-lg transition"
                     >
-                        <span
-                            class="text-white text-sm sm:text-base leading-relaxed order-1 md:order-1"
-                            >En J & K CONSULTING SAC no solo cumplimos con tus
-                            obligaciones contables, las transformamos en
-                            ventajas competitivas. Estos son los pilares que nos
-                            diferencian:
-                            <ul class="p-4 sm:p-6 space-y-3 sm:space-y-4 mt-3">
-                                <li>
-                                    <strong class="">
-                                        ✓ Experiencia que respalda resultados -</strong
-                                    >
+                        <div class="shrink-0">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="50"
+                                height="50"
+                                fill="currentColor"
+                                class="bi bi-eye text-[#084e9c]"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8"
+                                ></path>
+                                <path d="M8 5a3 3 0 1 0 0 6 3 3 0 0 0 0-6"
+                                ></path>
+                            </svg>
+                        </div>
 
-                                    Profesionales colegiados con amplio
-                                    conocimiento del entorno empresarial peruano
-                                </li>
-                                <li>
-                                    <strong
-                                        >✓ Atención 100% personalizada -</strong
-                                    >
-                                    No eres un número más. Conocemos tu negocio, tus
-                                    metas y tus desafíos
-                                </li>
-                                <li>
-                                    <strong>
-                                        ✓ Cumplimiento garantizado -</strong
-                                    >
-                                    Cero multas, cero retrasos. Nos anticipamos a
-                                    los plazos y requisitos de SUNAT
-                                </li>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1">Visión</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Ser una empresa referente en soluciones
+                                digitales, impulsando el crecimiento sostenible
+                                de emprendedores y negocios.
+                            </p>
+                        </div>
+                    </div>
 
-                                <li>
-                                    <strong>✓ Asesoría proactiva -</strong>
-                                    No esperamos a que preguntes, te orientamos antes
-                                    de que surjan problemas
-                                </li>
-                            </ul></span
-                        >
-                        <div class="w-full md:w-2xl order-2 md:order-2">
-                            <img
-                                class="w-full h-full rounded-2xl"
-                                src={Elegirnos.src}
-                                alt=""
-                            />
+                    <!-- MISIÓN -->
+                    <div
+                        class="flex items-start gap-6 p-6 rounded-xl hover:shadow-lg transition"
+                    >
+                        <div class="shrink-0">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="50"
+                                height="50"
+                                fill="currentColor"
+                                class="bi bi-lightbulb text-[#084e9c]"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6"
+                                ></path>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1">Misión</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Brindar herramientas y acompañamiento
+                                estratégico que permitan a los emprendedores
+                                hacer crecer su negocio con confianza.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -295,7 +309,7 @@ import Elegirnos from "../../assets/ElegirnosLogo.jpg";
                                         ></path>
                                     </svg>
                                     <span class="text-gray-300 text-sm"
-                                        >rkchavezpio@gmail.com</span
+                                        >jkconsultingsac@gmail.com</span
                                     >
                                 </li>
                                 <li class="flex items-center space-x-2">
