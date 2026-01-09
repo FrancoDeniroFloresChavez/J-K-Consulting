@@ -5,12 +5,10 @@ import { Image } from "astro:assets";
 ---
 
 <main class="">
-    <div
-        class="grid grid-cols-1 lg:grid-cols-2 px-4 sm:px-6 md:px-8 lg:px-5 mt-6 sm:mt-8 md:mt-10 gap-8 lg:gap-0"
-    >
-        <section class="flex flex-col gap-4 sm:gap-5 md:gap-7 pl-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+        <section class="flex flex-col pl-10 pt-16">
             <h1
-                class="animate-fade-in-down bg-gradient-to-r from-[#0D3D5C] to-[#247CB5] bg-clip-text text-transparent font-bold text-2xl sm:text-3xl md:text-[37.5px] w-full max-w-[451px] tracking-wider mb-3 sm:mb-4 md:mb-5"
+                class="animate-fade-in-down bg-gradient-to-r from-[#0D3D5C] to-[#247CB5] bg-clip-text text-transparent font-bold text-4xl sm:text-3xl md:text-[45.5px] w-full max-w-[500px] tracking-wider mb-3 sm:mb-4 md:mb-5"
             >
                 Impulsa tu Negocio con Contabilidad Profesional
             </h1>
@@ -42,12 +40,10 @@ import { Image } from "astro:assets";
                 >
             </div>
         </section>
-        <section class="flex justify-center lg:justify-end pr-8">
-            <div
-                class="w-full max-w-[359px] h-[400px] sm:h-[480px] md:h-[540px]"
-            >
+        <section class="flex justify-center">
+            <div class="hidden lg:block w-full clip-trapecio h-[560px]">
                 <img
-                    class="w-full h-full animate-fade-in-down object-contain"
+                    class="w-full h-full animate-fade-in-down animate-delay-400 object-cover"
                     src={Contador.src}
                     alt=""
                 />
@@ -56,9 +52,7 @@ import { Image } from "astro:assets";
     </div>
 
     <section class="">
-        <div
-            class="w-full mt-12 sm:mt-16 md:mt-20 flex flex-col animate-fade-in animate-delay-700"
-        >
+        <div class="w-full flex flex-col animate-fade-in animate-delay-700">
             <div
                 class="p-4 sm:p-6 md:p-8 bg-gradient-to-r from-[#0A2942] via-[#0D3D5C] to-[#1F5F8B] rounded-sm animate-fade-in-down"
             >
@@ -170,7 +164,7 @@ import { Image } from "astro:assets";
             </div>
 
             <footer
-                class="bg-gradient-to-br from-[#0A2942] via-[#0D3D5C] to-[#1F5F8B] mt-20 text-white py-12"
+                class="bg-gradient-to-br from-[#0c3c63] via-[#0d3e5f] to-[#096bac] mt-20 text-white py-12"
             >
                 <div class="container mx-auto px-4">
                     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
