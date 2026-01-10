@@ -92,7 +92,10 @@ import Footer from "../../assets/Footer.png"; // ✅ Correcto
                     </div>
                 </div>
                 <div class="flex justify-center">
-                    <form action="/contacto" method="POST">
+                    <form
+                        action="https://formsubmit.co/francodeniro.24@gmail.com"
+                        method="POST"
+                    >
                         <div class="flex flex-col gap-4">
                             <div class="flex gap-6">
                                 <div class="flex flex-col gap-1">
@@ -102,7 +105,7 @@ import Footer from "../../assets/Footer.png"; // ✅ Correcto
                                     >
                                     <input
                                         name="nombre"
-                                        class="w-96 shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2"
+                                        class="w-96 shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2 focus:outline-blue-400 focus:bg-white"
                                         type="text"
                                         placeholder="Ingresa tu nombre"
                                         required
@@ -116,7 +119,7 @@ import Footer from "../../assets/Footer.png"; // ✅ Correcto
                                     >
                                     <input
                                         name="telefono"
-                                        class="w-96 shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2"
+                                        class="w-96 shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2 focus:outline-blue-400 focus:bg-white"
                                         type="text"
                                         placeholder="Ingresa tu teléfono"
                                         required
@@ -133,7 +136,7 @@ import Footer from "../../assets/Footer.png"; // ✅ Correcto
                                     <input
                                         name="correo"
                                         type="email"
-                                        class="w-96 shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2"
+                                        class="w-96 shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2 focus:outline-blue-400 focus:bg-white"
                                         placeholder="Ingresa tu correo"
                                         required
                                     />
@@ -146,7 +149,7 @@ import Footer from "../../assets/Footer.png"; // ✅ Correcto
                                     >
                                     <input
                                         name="empresa"
-                                        class="w-96 shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2"
+                                        class="w-96 shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2 focus:outline-blue-400 focus:bg-white"
                                         type="text"
                                         placeholder="Nombre de la empresa"
                                     />
@@ -159,7 +162,7 @@ import Footer from "../../assets/Footer.png"; // ✅ Correcto
                                 >
                                 <textarea
                                     name="mensaje"
-                                    class="w-[790px] shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2"
+                                    class="w-[790px] shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2 focus:outline-blue-400 focus:bg-white"
                                     rows="4"
                                     placeholder="Escribe tu mensaje"
                                     required></textarea>
@@ -171,6 +174,16 @@ import Footer from "../../assets/Footer.png"; // ✅ Correcto
                                     compartidos
                                 </span>
                             </div>
+                            <input
+                                type="hidden"
+                                name="_next"
+                                value="https://jk-consulting3.netlify.app/gracias"
+                            />
+                            <input
+                                type="hidden"
+                                name="_captcha"
+                                value="false"
+                            />
 
                             <button
                                 type="submit"

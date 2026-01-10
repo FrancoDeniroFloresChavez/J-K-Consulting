@@ -5,10 +5,11 @@ import { Image } from "astro:assets";
 ---
 
 <main class="">
-    <div class="grid grid-cols-1 lg:grid-cols-2">
-        <section class="flex flex-col pl-10 pt-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 2xl:">
+        <section class="flex flex-col pl-10 pt-16 2xl:pl-32 2xl:pt-44">
             <h1
-                class="animate-fade-in-down bg-gradient-to-r from-[#0D3D5C] to-[#247CB5] bg-clip-text text-transparent font-bold text-4xl sm:text-3xl md:text-[45.5px] w-full max-w-[500px] tracking-wider mb-3 sm:mb-4 md:mb-5"
+                class="animate-fade-in-down bg-gradient-to-r from-[#0D3D5C] to-[#247CB5] bg-clip-text text-transparent font-bold text-4xl sm:text-3xl md:text-[45.5px] w-full max-w-[500px] tracking-wider mb-3 sm:mb-4 md:mb-5 2xl:text-6xl
+                2xl:max-w-[700px] 2xl:mb-11"
             >
                 Impulsa tu Negocio con Contabilidad Profesional
             </h1>
@@ -41,7 +42,9 @@ import { Image } from "astro:assets";
             </div>
         </section>
         <section class="flex justify-center">
-            <div class="hidden lg:block w-full clip-trapecio h-[560px]">
+            <div
+                class="hidden lg:block w-full clip-trapecio h-[560px] 2xl:h-[900px]"
+            >
                 <img
                     class="w-full h-full animate-fade-in-down animate-delay-400 object-cover"
                     src={Contador.src}
@@ -329,7 +332,7 @@ import { Image } from "astro:assets";
                     </div>
 
                     <!-- Línea divisoria -->
-                    <div class="border-t border-gray-700 mt-8 pt-8">
+                    <div class="border-t border-white mt-8 pt-8">
                         <div
                             class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
                         >

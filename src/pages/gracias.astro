@@ -1,0 +1,175 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="¡Mensaje Enviado! - Gracias por Contactarnos">
+    <main
+        class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center px-4 py-12"
+    >
+        <div class="max-w-2xl w-full">
+            <!-- Animación de éxito -->
+            <div class="text-center mb-8">
+                <div
+                    class="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full shadow-2xl mb-6 animate-bounce"
+                >
+                    <svg
+                        class="w-12 h-12 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="3"
+                            d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+
+                <h1
+                    class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#0D3D5C] to-[#247CB5] bg-clip-text text-transparent mb-4"
+                >
+                    ¡Mensaje Enviado!
+                </h1>
+
+                <p class="text-xl text-gray-600 mb-2">
+                    Gracias por contactarnos
+                </p>
+            </div>
+
+            <!-- Card principal -->
+            <div
+                class="bg-white shadow-2xl rounded-2xl p-8 md:p-12 border border-gray-100"
+            >
+                <div class="space-y-6">
+                    <!-- Mensaje principal -->
+                    <div class="text-center">
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Hemos recibido tu mensaje correctamente y nuestro
+                            equipo lo está revisando.
+                        </p>
+                    </div>
+
+                    <!-- Información adicional -->
+                    <div
+                        class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-100"
+                    >
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0">
+                                <svg
+                                    class="w-6 h-6 text-[#247CB5]"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">
+                                    ¿Qué sigue?
+                                </h3>
+                                <ul class="text-sm text-gray-600 space-y-2">
+                                    <li class="flex items-center gap-2">
+                                        <span
+                                            class="w-1.5 h-1.5 bg-[#247CB5] rounded-full"
+                                        ></span>
+                                        Revisaremos tu mensaje en las próximas 24-48
+                                        horas
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span
+                                            class="w-1.5 h-1.5 bg-[#247CB5] rounded-full"
+                                        ></span>
+                                        Te responderemos al correo que proporcionaste
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span
+                                            class="w-1.5 h-1.5 bg-[#247CB5] rounded-full"
+                                        ></span>
+                                        Revisa tu bandeja de spam por si acaso
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botones de acción -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a
+                            href="/"
+                            class="flex-1 inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0D3D5C] to-[#247CB5] text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
+                        >
+                            <svg
+                                class="w-5 h-5"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                                ></path>
+                            </svg>
+                            Volver al Inicio
+                        </a>
+
+                        <a
+                            href="/contacto"
+                            class="flex-1 inline-flex items-center justify-center gap-2 bg-white text-[#0D3D5C] px-6 py-3 rounded-lg font-medium border-2 border-[#247CB5] hover:bg-blue-50 transition-all duration-300"
+                        >
+                            <svg
+                                class="w-5 h-5"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                ></path>
+                            </svg>
+                            Enviar Otro Mensaje
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer de contacto alternativo -->
+            <div class="text-center mt-8 text-sm text-gray-500">
+                <p>
+                    ¿Necesitas ayuda urgente? Escríbenos a <a
+                        href="mailto:contacto@tuempresa.com"
+                        class="text-[#247CB5] hover:underline font-medium"
+                        >contacto@tuempresa.com</a
+                    >
+                </p>
+            </div>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    @keyframes bounce {
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .animate-bounce {
+        animation: bounce 2s infinite;
+    }
+</style>
