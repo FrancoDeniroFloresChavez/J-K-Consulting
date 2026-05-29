@@ -1,5 +1,5 @@
 ---
-import Footer from "../../assets/Footer.png"; // ✅ Correcto
+import Footer from "../../assets/Footer.png";
 ---
 
 <main class="">
@@ -7,17 +7,17 @@ import Footer from "../../assets/Footer.png"; // ✅ Correcto
         <section class="">
             <div class="">
                 <div
-                    class="mt-8 md:mt-10 mb-8 md:mb-16 animate-fade-in grid grid-cols-[2fr_1fr]"
+                    class="mt-8 md:mt-10 mb-8 md:mb-16 animate-fade-in grid grid-cols-1 sm:grid-cols-[2fr_1fr] items-end gap-6"
                 >
-                    <div class="p-10">
+                    <div class="p-5 sm:p-10">
                         <h3
-                            class="font-bold text-[#0D3D5C] text-2xl sm:text-3xl md:text-4xl mb-10"
+                            class="font-bold text-[#0D3D5C] text-2xl sm:text-3xl md:text-4xl mb-6 sm:mb-10"
                         >
-                            Contactanos
+                            Contáctanos
                         </h3>
 
                         <span
-                            class="block text-cyan-900 sm:text-sm md:text-[16.6px] md:leading-8 animate-fade-in ml-5"
+                            class="block text-cyan-900 text-sm sm:text-sm md:text-[16.6px] md:leading-8 animate-fade-in ml-2 sm:ml-5"
                         >
                             Completa el formulario y cuéntanos tu consulta. Un
                             asesor contable revisará tu información y se pondrá
@@ -26,27 +26,26 @@ import Footer from "../../assets/Footer.png"; // ✅ Correcto
                             tributario de tu negocio.
                         </span>
                     </div>
-                    <!-- CONTENEDOR -->
+
+                    <!-- CONTENEDOR CARD WHATSAPP -->
                     <div
-                        class="w-[250px] h-[300px] flex self-end justify-self-end"
+                        class="w-full sm:w-[250px] sm:justify-self-end flex justify-center sm:block"
                     >
                         <!-- CARD -->
                         <div
                             class="bg-[#F3FFEE]
-        flex flex-col items-center justify-center
-        h-full w-full
-        rounded-4xl
-        shadow-[0_12px_30px_rgba(0,0,0,0.15)]
-        hover:shadow-[0_20px_45px_rgba(45,174,69,0.25)]
-        transition-all duration-300"
+                            flex flex-col items-center justify-center
+                            h-[220px] sm:h-[300px] w-full sm:w-full
+                            rounded-4xl
+                            shadow-[0_12px_30px_rgba(0,0,0,0.15)]
+                            hover:shadow-[0_20px_45px_rgba(45,174,69,0.25)]
+                            transition-all duration-300"
                         >
-                            <!-- TITULO -->
                             <h3 class="text-[#2DAE45] mb-6 font-bold text-xl">
                                 Prefieres escribirnos
                             </h3>
 
-                            <!-- ICONO -->
-                            <div class="flex flex-col items-center gap-4">
+                         <div class="flex flex-col items-center gap-4">
                                 <a
                                     href="https://wa.me/51974613498"
                                     target="_blank"
@@ -74,38 +73,34 @@ import Footer from "../../assets/Footer.png"; // ✅ Correcto
                                     </svg>
                                 </a>
 
-                                <!-- TEXTO -->
-                                <span
-                                    class="text-[#2DAE45] font-semibold text-lg"
-                                >
+                                <span class="text-[#2DAE45] font-semibold text-lg">
                                     Respuesta rápida
                                 </span>
 
-                                <!-- SUBTEXTO -->
-                                <span
-                                    class="text-sm text-gray-500 text-center px-4"
-                                >
+                                <span class="text-sm text-gray-500 text-center px-4">
                                     Atención inmediata por WhatsApp
                                 </span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
+
+                <!-- FORMULARIO -->
+                <div class="flex justify-center px-4 sm:px-6 md:px-0">
                     <form
                         action="https://formsubmit.co/jkconsultingsac@gmail.com"
                         method="POST"
+                        class="w-full max-w-[820px]"
                     >
                         <div class="flex flex-col gap-4">
-                            <div class="flex gap-6">
+
+                            <!-- Fila 1: Nombre + Teléfono -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                                 <div class="flex flex-col gap-1">
-                                    <label
-                                        class="text-sm font-medium text-gray-700"
-                                        >Nombre</label
-                                    >
+                                    <label class="text-sm font-medium text-gray-700">Nombre</label>
                                     <input
                                         name="nombre"
-                                        class="w-96 shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2 focus:outline-blue-400 focus:bg-white"
+                                        class="w-full shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2 focus:outline-blue-400 focus:bg-white"
                                         type="text"
                                         placeholder="Ingresa tu nombre"
                                         required
@@ -113,13 +108,10 @@ import Footer from "../../assets/Footer.png"; // ✅ Correcto
                                 </div>
 
                                 <div class="flex flex-col gap-1">
-                                    <label
-                                        class="text-sm font-medium text-gray-700"
-                                        >Teléfono</label
-                                    >
+                                    <label class="text-sm font-medium text-gray-700">Teléfono</label>
                                     <input
                                         name="telefono"
-                                        class="w-96 shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2 focus:outline-blue-400 focus:bg-white"
+                                        class="w-full shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2 focus:outline-blue-400 focus:bg-white"
                                         type="text"
                                         placeholder="Ingresa tu teléfono"
                                         required
@@ -127,67 +119,52 @@ import Footer from "../../assets/Footer.png"; // ✅ Correcto
                                 </div>
                             </div>
 
-                            <div class="flex gap-6">
+                            <!-- Fila 2: Correo + Empresa -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                                 <div class="flex flex-col gap-1">
-                                    <label
-                                        class="text-sm font-medium text-gray-700"
-                                        >Correo</label
-                                    >
+                                    <label class="text-sm font-medium text-gray-700">Correo</label>
                                     <input
                                         name="correo"
                                         type="email"
-                                        class="w-96 shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2 focus:outline-blue-400 focus:bg-white"
+                                        class="w-full shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2 focus:outline-blue-400 focus:bg-white"
                                         placeholder="Ingresa tu correo"
                                         required
                                     />
                                 </div>
 
                                 <div class="flex flex-col gap-1">
-                                    <label
-                                        class="text-sm font-medium text-gray-700"
-                                        >Empresa</label
-                                    >
+                                    <label class="text-sm font-medium text-gray-700">Empresa</label>
                                     <input
                                         name="empresa"
-                                        class="w-96 shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2 focus:outline-blue-400 focus:bg-white"
+                                        class="w-full shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2 focus:outline-blue-400 focus:bg-white"
                                         type="text"
                                         placeholder="Nombre de la empresa"
                                     />
                                 </div>
                             </div>
 
+                            <!-- Mensaje -->
                             <div class="flex flex-col gap-1">
-                                <label class="text-sm font-medium text-gray-700"
-                                    >Mensaje</label
-                                >
+                                <label class="text-sm font-medium text-gray-700">Mensaje</label>
                                 <textarea
                                     name="mensaje"
-                                    class="w-[790px] shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2 focus:outline-blue-400 focus:bg-white"
+                                    class="w-full shadow-lg bg-[#F5F5F5] rounded-md px-3 py-2 focus:outline-blue-400 focus:bg-white"
                                     rows="4"
                                     placeholder="Escribe tu mensaje"
-                                    required></textarea>
+                                    required
+                                ></textarea>
 
-                                <span
-                                    class="text-xs text-gray-500 flex items-center gap-1"
-                                >
-                                    🔒 Tus datos están protegidos y no serán
-                                    compartidos
+                                <span class="text-xs text-gray-500 flex items-center gap-1">
+                                    🔒 Tus datos están protegidos y no serán compartidos
                                 </span>
                             </div>
-                            <input
-                                type="hidden"
-                                name="_next"
-                                value="https://jk-consulting3.netlify.app/gracias"
-                            />
-                            <input
-                                type="hidden"
-                                name="_captcha"
-                                value="false"
-                            />
+
+                            <input type="hidden" name="_next" value="https://jk-consulting3.netlify.app/gracias" />
+                            <input type="hidden" name="_captcha" value="false" />
 
                             <button
                                 type="submit"
-                                class="w-96 bg-gradient-to-r from-[#0D3D5C] to-[#247CB5] text-white py-3 rounded-md font-medium"
+                                class="w-full sm:w-1/2 bg-gradient-to-r from-[#0D3D5C] to-[#247CB5] text-white py-3 rounded-md font-medium"
                             >
                                 Enviar mensaje
                             </button>
@@ -196,18 +173,16 @@ import Footer from "../../assets/Footer.png"; // ✅ Correcto
                 </div>
             </div>
         </section>
+
+        <!-- REDES SOCIALES -->
         <section
             class="w-full flex flex-col items-center mt-10 sm:mt-12 md:mt-14 h-auto animate-fade-in animate-delay-500 px-4"
         >
-            <h3
-                class="text-[#0D3D5C] font-bold text-xl sm:text-2xl md:text-3xl text-center"
-            >
-                Siguenos en nuestras redes
+            <h3 class="text-[#0D3D5C] font-bold text-xl sm:text-2xl md:text-3xl text-center">
+                Síguenos en nuestras redes
             </h3>
             <div class="mt-6 sm:mt-8 md:mt-10">
-                <a
-                    href="https://www.facebook.com/profile.php?id=61574419206350"
-                >
+                <a href="https://www.facebook.com/profile.php?id=61574419206350">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -219,21 +194,21 @@ import Footer from "../../assets/Footer.png"; // ✅ Correcto
                         <path
                             d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
                         ></path>
-                    </svg></a
-                >
+                    </svg>
+                </a>
             </div>
         </section>
     </article>
+
+    <!-- FOOTER -->
     <footer
         class="mt-20 sm:mt-28 md:mt-36 h-48 sm:h-56 md:h-64 animate-fade-in animate-delay-300"
     >
         <div class="relative w-full h-full">
             <img class="w-full h-full object-cover" src={Footer.src} alt="" />
 
-            <!-- Overlay azul -->
             <div class="absolute inset-0 bg-[#072873]/50"></div>
 
-            <!-- Texto centrado en un contenedor más pequeño -->
             <div class="absolute inset-0 flex items-center justify-center">
                 <p
                     class="text-white text-sm sm:text-base md:text-lg text-center max-w-[850px] px-4 sm:px-6 md:px-4"
